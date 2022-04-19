@@ -40,8 +40,8 @@ export default function NavBar() {
                 </a>
               </li>
             </ul>
-            <div class="d-flex">
-      <button class="btn btn-outline-success" type="submit">Contact Us!</button>
+            <div className="d-flex">
+      <button className="btn btn-outline-success" type="submit">Contact Us!</button>
     </div>
             
           </div>

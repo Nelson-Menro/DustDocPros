@@ -1,68 +1,40 @@
-import Head from 'next/head'
-import NavBar from '../components/navbar'
+import Head from "next/head";
+import NavBar from "../components/navbar";
+import Layout from "../components/layouts";
+const myComponentStyle = {
+  width: "100%",
+  height: "100%"
+};
+
+const calendlyStyle = {
+    width: "100%",
+    height: "100%"
+  };
+const containerStyle = {
+  "display": "flex",
+  "justify-content": "space-evenly",
+};
 export default function Contact() {
   return (
-    <div >
-       <NavBar/>
-      <Head>
-        <title>DustDoc</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Home!</a>
-        </h1>
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" />
-        </a>
-      </footer>
-
-      
-
-
-    </div>
-  )
+    <>
+      <div style={containerStyle}>
+        <h2>Setup an appointment!</h2>
+        <div
+          className="calendly-inline-widget"
+          data-url="https://calendly.com/nelsonmendez99?hide_landing_page_details=1&hide_gdpr_banner=1"
+          style={calendlyStyle}
+        ></div>
+        <script
+          type="text/javascript"
+          src="https://assets.calendly.com/assets/external/widget.js"
+          async
+        ></script>
+      </div>
+      </>
+    
+  );
 }
+
+Contact.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};
