@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import NavBar from '../components/navbar'
-export default function Home() {
+export default function Contact() {
   return (
-  
     <div >
        <NavBar/>
       <Head>
