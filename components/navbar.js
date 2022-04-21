@@ -1,11 +1,11 @@
 import Link from "next/link";
 export default function NavBar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
-            DustDoc Pros
-          </a>
+        <a className="navbar-brand" href="/">
+            <img src="/DustDocProImages/logo.jpg" alt="DustDoc Pro" width="80" height="80"></img>
+        </a>
           <button
             className="navbar-toggler"
             type="button"
@@ -19,11 +19,6 @@ export default function NavBar() {
           </button>
           <div className="collapse navbar-collapse" id="navbarText">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
-                  Home
-                </a>
-              </li>
               <li className="nav-item">
                 <a className="nav-link" href="/work">
                   Work
@@ -41,7 +36,7 @@ export default function NavBar() {
               </li>
             </ul>
             <div className="d-flex">
-      <button className="btn btn-outline-success" type="submit">Contact Us!</button>
+      <button className="btn btn-outline-success" type="submit">Call Now!</button>
     </div>
             
           </div>
