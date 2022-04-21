@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import NavBar from '../components/navbar'
 import Layout from '../components/layouts'
 export default function Work() {
   return (

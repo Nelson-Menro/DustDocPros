@@ -1,5 +1,4 @@
 import Head from "next/head";
-import NavBar from "../components/navbar";
 import Layout from "../components/layouts";
 const myComponentStyle = {
   width: "100%",

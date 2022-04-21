@@ -1,6 +1,4 @@
 import Head from 'next/head'
-// import NavBar from '../components/navbar'
-// import Footer from '../components/footer'
 import Layout from '../components/layouts'
 export default function Home() {
   return (
