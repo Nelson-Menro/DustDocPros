@@ -5,7 +5,7 @@ import { faHouse, faBuilding } from '@fortawesome/free-solid-svg-icons';
 export default function Home() {
   const container = {
     position: "relative",
-    "text-align": "center",
+    "textAlign": "center",
     color: "white",
     width: "100%",
   };
@@ -18,14 +18,14 @@ export default function Home() {
   const imageStyle = {
     "filter": "brightness(50%)",
     "width": "75%",
-    "border-radius" : "5px"
+    "borderRadius" : "5px"
   };
 
   const cardContent = {
     "display" : "flex",
-    "align-items" : "center",
-    "justify-content" : "center",
-    "flex-direction" : "column",
+    "alignItems" : "center",
+    "justifyContent" : "center",
+    "flexDirection" : "column",
     "gap" : "20px"
   }
   return (

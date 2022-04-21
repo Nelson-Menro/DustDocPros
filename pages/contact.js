@@ -18,14 +18,14 @@ const calendlyStyle = {
 };
 const containerStyle = {
   display: "flex",
-  "justify-content": "space-evenly",
+  "justifyContent": "space-evenly",
   width: "100%",
 };
 
 const leftSideContainer = {
   display: "flex",
-  "flex-direction": "column",
-  "justify-content": "flex-start",
+  "flexDirection": "column",
+  "justifyContent": "flex-start",
   width: "100%",
 };
 export default function Contact() {
@@ -177,11 +177,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <div
-          className="calendly-inline-widget col"
-          data-url="https://calendly.com/nelsonmendez99"
-         
-        ></div>
+        <div className="calendly-inline-widget col" data-url="https://calendly.com/nelsonmendez99"></div>
         <script
           type="text/javascript"
           src="https://assets.calendly.com/assets/external/widget.js"
