@@ -32,7 +32,7 @@ export default function About() {
           </div>
         </article>
         <div style={imageStyle}>
-          <img style={{"width" : "90%", "border-radius" : "5px"}} src="/DustDocProImages/IMG_8546.jpg"></img>
+          <img style={{"width" : "90%", "border-radius" : "5px"}} src="/DustDocProImages/logo.jpg"></img>
         </div>
       </div>
     </>

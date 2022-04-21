@@ -33,10 +33,10 @@ export default function Work() {
               aria-label="Slide 3"
             ></button>
           </div>
-          <div className="carousel-inner">
+          <div className="carousel-inner" style={{"borderRadius" : "5px"}}>
             <div className="carousel-item active">
               <img
-                src="/DustDocProImages/IMG_0152.jpeg"
+                src="/DustDocProImages/IMG_8546.jpg"
                 className="d-block w-100"
                 alt="..."
               />
@@ -62,7 +62,7 @@ export default function Work() {
             </div>
             <div className="carousel-item">
               <img
-                src="/DustDocProImages/IMG_0152.jpeg"
+                src="/DustDocProImages/IMG_8546.jpg"
                 className="d-block w-100"
                 alt="..."
               />
