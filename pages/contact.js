@@ -31,7 +31,7 @@ const leftSideContainer = {
 export default function Contact() {
   return (
     <>
-      <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+      <div className="container" style={{ display: "flex", justifyContent: "space-evenly", "flexWrap" : "wrap" }}>
         <div className="col">
           <h4>Feel free to contact us for any kind of business query</h4>
           <p style={{ width: "75%", color: "grey" }}>

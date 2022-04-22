@@ -7,8 +7,8 @@ export default function About() {
   };
   return (
     <>
-      <div className="row justify-content-evenly">
-        <article className="col-4">
+      <div style={{"display" : "flex", "flexWrap" : "wrap", "justifyContent" : "space-between"}}>
+        <article className="col-6">
           <div >
             <h3>About Dust Doc Pro</h3>
             <p>The customer is always right</p>

@@ -1,6 +1,13 @@
 import Head from "next/head";
 import Layout from "../components/layouts";
 export default function Work() {
+  const imageStyle = {
+    filter: "brightness(50%)",
+    width: "auto",
+    maxWidth: "100%",
+    borderRadius: "5px",
+    height: "auto ",
+  };
   return (
     <>
       <h1>Our Showcase</h1>
