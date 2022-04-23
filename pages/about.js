@@ -8,7 +8,7 @@ export default function About() {
   return (
     <>
       <div className="container">
-        <div
+        {/* <div
           style={{
             display: "flex",
             flexWrap: "wrap",
@@ -41,6 +41,28 @@ export default function About() {
           <div style={imageStyle}>
             <img
               style={{ width: "90%", borderRadius: "5px" }}
+              src="/DustDocProImages/logo.jpg"
+            ></img>
+          </div>
+        </div> */}
+        <div className="row featurette">
+          <div className="col-md-7">
+            <h2 className="featurette-heading">
+              Dust Doc Pro{" "}
+              {/* <span className="text-muted">It’ll blow your mind.</span> */}
+            </h2>
+            <p className="lead">
+              Dust Doc Pro<sup>®</sup> is so much more than just a home cleaning
+              service. We are a company dedicated to giving our customers back
+              the time they deserve to enjoy the things they love. We put The
+              Extra In Your Ordinary
+              <sup>®</sup>, restoring balance to your life by taking care of
+              your home.
+            </p>
+          </div>
+          <div className="col-md-5">
+            <img
+              style={{ width: "90%"}}
               src="/DustDocProImages/logo.jpg"
             ></img>
           </div>
