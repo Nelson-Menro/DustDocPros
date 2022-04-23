@@ -5,7 +5,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Navbar />
-      <main className="container">{children}</main>
+      <main style={{"paddingTop" : "0"}}>{children}</main>
       <Footer />
     </>
   )

@@ -7,32 +7,43 @@ export default function About() {
   };
   return (
     <>
-      <div style={{"display" : "flex", "flexWrap" : "wrap", "justifyContent" : "space-between"}}>
-        <article className="col-6">
-          <div >
-            <h3>About Dust Doc Pro</h3>
-            <p>The customer is always right</p>
-            <br />
-            <p>
-              Dust Doc Pro<sup>®</sup> is so much more than just a home cleaning
-              service. We are a company dedicated to giving our customers back
-              the time they deserve to enjoy the things they love. We put The
-              Extra In Your Ordinary
-              <sup>®</sup>, restoring balance to your life by taking care of
-              your home.
-            </p>
-            <p>
-              Dust Doc Pro<sup>®</sup> is so much more than just a home cleaning
-              service. We are a company dedicated to giving our customers back
-              the time they deserve to enjoy the things they love. We put The
-              Extra In Your Ordinary
-              <sup>®</sup>, restoring balance to your life by taking care of
-              your home.
-            </p>
+      <div className="container">
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-between",
+          }}
+        >
+          <article className="col-lg-6">
+            <div>
+              <h3>About Dust Doc Pro</h3>
+              <p>The customer is always right</p>
+              <br />
+              <p>
+                Dust Doc Pro<sup>®</sup> is so much more than just a home
+                cleaning service. We are a company dedicated to giving our
+                customers back the time they deserve to enjoy the things they
+                love. We put The Extra In Your Ordinary
+                <sup>®</sup>, restoring balance to your life by taking care of
+                your home.
+              </p>
+              <p>
+                Dust Doc Pro<sup>®</sup> is so much more than just a home
+                cleaning service. We are a company dedicated to giving our
+                customers back the time they deserve to enjoy the things they
+                love. We put The Extra In Your Ordinary
+                <sup>®</sup>, restoring balance to your life by taking care of
+                your home.
+              </p>
+            </div>
+          </article>
+          <div style={imageStyle}>
+            <img
+              style={{ width: "90%", borderRadius: "5px" }}
+              src="/DustDocProImages/logo.jpg"
+            ></img>
           </div>
-        </article>
-        <div style={imageStyle}>
-          <img style={{"width" : "90%", "borderRadius" : "5px"}} src="/DustDocProImages/logo.jpg"></img>
         </div>
       </div>
     </>
