@@ -10,96 +10,137 @@ export default function Work() {
   };
   return (
     <>
-      <h1>Our Showcase</h1>
-      <div style={{"width" : "100%", "display" : "flex", "justifyContent" : "center"}}>
-        <div
-          id="carouselExampleCaptions"
-          className="carousel slide"
-          data-bs-ride="carousel"
-          style={{"width" : "50%"}}
-        >
-          <div className="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="0"
-              className="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
+      <div className="container">
+        <div className="row featurette">
+          <div className="col-md-7">
+            <h2 className="featurette-heading">
+              Dust Doc Pro <span className="text-muted">in action.</span>
+            </h2>
+            <p className="lead">
+              Dust Doc Pro<sup>®</sup> is so much more than just a home cleaning
+              service. We are a company dedicated to giving our customers back
+              the time they deserve to enjoy the things they love. We put The
+              Extra In Your Ordinary
+              <sup>®</sup>, restoring balance to your life by taking care of
+              your home.
+            </p>
           </div>
-          <div className="carousel-inner" style={{"borderRadius" : "5px"}}>
-            <div className="carousel-item active">
-              <img
-                src="/DustDocProImages/IMG_8546.jpg"
-                className="d-block w-100"
-                alt="..."
-              />
-              <div className="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>
-                  Some representative placeholder content for the first slide.
-                </p>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <img
-                src="/DustDocProImages/IMG_0152.jpeg"
-                className="d-block w-100"
-                alt="..."
-              />
-              <div className="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>
-                  Some representative placeholder content for the second slide.
-                </p>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <img
-                src="/DustDocProImages/IMG_8546.jpg"
-                className="d-block w-100"
-                alt="..."
-              />
-              <div className="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>
-                  Some representative placeholder content for the third slide.
-                </p>
-              </div>
-            </div>
+          <div className="col-md-5">
+            <video
+              autoPlay
+              loop
+              style={{ borderRadius: "5px", width: "100%", height: "50%" }}
+            >
+              <source src="/DustDocProImages/IMG_4778.MOV" type="video/mp4" />
+            </video>
           </div>
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev"
-          >
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next"
-          >
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-          </button>
         </div>
+        {/* <hr
+          className="featurette-divider"
+          style={{ color: "black", width: "90%" }}
+        /> */}
+        
+          <div class="mgb-40 padb-30 auto-invert line-b-4 align-center">
+            <h4
+              class="font-cond-l fg-accent lts-md mgb-10"
+              contenteditable="false"
+            >
+              Not Yet Convinced?
+            </h4>
+            <h1
+              class="font-cond-b fg-text-d lts-md fs-300 fs-300-xs no-mg"
+              contenteditable="false"
+            >
+              Read Customer Reviews
+            </h1>
+          </div>
+          <ul class="hash-list cols-3 cols-1-xs pad-30-all align-center text-sm">
+            <li>
+              <img
+                src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                class="wpx-100 img-round mgb-20"
+                title=""
+                alt=""
+                data-edit="false"
+                data-editor="field"
+                data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]"
+              />
+              <p class="fs-110 font-cond-l" contenteditable="false">
+                " Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae. "
+              </p>
+              <h5
+                class="font-cond mgb-5 fg-text-d fs-130"
+                contenteditable="false"
+              >
+                Martha Stewart
+              </h5>
+              <small
+                class="font-cond case-u lts-sm fs-80 fg-text-l"
+                contenteditable="false"
+              >
+                Business Woman - New York
+              </small>
+            </li>
+            <li>
+              <img
+                src="https://bootdey.com/img/Content/avatar/avatar4.png"
+                class="wpx-100 img-round mgb-20"
+                title=""
+                alt=""
+                data-edit="false"
+                data-editor="field"
+                data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]"
+              />
+              <p class="fs-110 font-cond-l" contenteditable="false">
+                " Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae. "
+              </p>
+              <h5
+                class="font-cond mgb-5 fg-text-d fs-130"
+                contenteditable="false"
+              >
+                Ariana Menage
+              </h5>
+              <small
+                class="font-cond case-u lts-sm fs-80 fg-text-l"
+                contenteditable="false"
+              >
+                Recording Artist - Los Angeles
+              </small>
+            </li>
+            <li>
+              <img
+                src="https://bootdey.com/img/Content/avatar/avatar5.png"
+                class="wpx-100 img-round mgb-20"
+                title=""
+                alt=""
+                data-edit="false"
+                data-editor="field"
+                data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]"
+              />
+              <p class="fs-110 font-cond-l" contenteditable="false">
+                " Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae. "
+              </p>
+              <h5
+                class="font-cond mgb-5 fg-text-d fs-130"
+                contenteditable="false"
+              >
+                Sean Carter
+              </h5>
+              <small
+                class="font-cond case-u lts-sm fs-80 fg-text-l"
+                contenteditable="false"
+              >
+                Fund Manager - Chicago
+              </small>
+            </li>
+          </ul>
+        
       </div>
     </>
   );
