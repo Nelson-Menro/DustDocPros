@@ -3,14 +3,16 @@ export default function NavBar() {
   return (
     <div className="container-fluid">
       <nav className="navbar navbar-expand-lg navbar-light">
-        <a className="navbar-brand" href="/">
-          <img
-            src="/DustDocProImages/logo.jpg"
-            alt="DustDoc Pro"
-            width="80"
-            height="80"
-          ></img>
-        </a>
+        <Link href="/">
+          <a className="navbar-brand">
+            <img
+              src="/DustDocProImages/logo.jpg"
+              alt="DustDoc Pro"
+              width="80"
+              height="80"
+            ></img>
+          </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -25,19 +27,21 @@ export default function NavBar() {
         <div className="collapse navbar-collapse" id="navbarText">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link" href="/work">
-                Work
-              </a>
+              <Link href="/work">
+                <a className="nav-link">Work</a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/about">
-                About Us
-              </a>
+              <Link href="/about">
+                <a className="nav-link">About Us</a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/contact">
-                Contact Us
-              </a>
+              <Link href="/contact">
+                <a className="nav-link">
+                  Contact Us
+                </a>
+              </Link>
             </li>
           </ul>
           <div className="d-flex">

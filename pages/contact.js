@@ -1,4 +1,5 @@
 import Head from "next/head";
+
 import Layout from "../components/layouts";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -7,31 +8,18 @@ import {
   faEnvelope,
   faClock,
 } from "@fortawesome/free-solid-svg-icons";
-const myComponentStyle = {
-  width: "100%",
-  height: "100%",
-};
 
-const calendlyStyle = {
-  width: "100%",
-  height: "100%",
-};
-const containerStyle = {
-  display: "flex",
-  "justifyContent": "space-evenly",
-  width: "100%",
-};
-
-const leftSideContainer = {
-  display: "flex",
-  "flexDirection": "column",
-  "justifyContent": "flex-start",
-  width: "100%",
-};
 export default function Contact() {
   return (
     <>
-      <div className="container" style={{ display: "flex", justifyContent: "space-evenly", "flexWrap" : "wrap" }}>
+      <div
+        className="container"
+        style={{
+          display: "flex",
+          justifyContent: "space-evenly",
+          flexWrap: "wrap",
+        }}
+      >
         <div className="col">
           <h4>Feel free to contact us for any kind of business query</h4>
           <p style={{ width: "75%", color: "grey" }}>
@@ -177,12 +165,19 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="calendly-inline-widget col" data-url="https://calendly.com/nelsonmendez99"></div>
+        <div
+          className="calendly-inline-widget"
+          data-url="https://calendly.com/nelsonmendez99/30min?hide_event_type_details=1&hide_gdpr_banner=1"
+          style={{"minWidth":"320px","height":"630px"}}
+        ></div>
         <script
           type="text/javascript"
           src="https://assets.calendly.com/assets/external/widget.js"
           async
         ></script>
+      </div>
+      <div id="map" style={{"width" : "80%"}}>
+
       </div>
     </>
   );
