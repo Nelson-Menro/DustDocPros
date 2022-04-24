@@ -1,5 +1,5 @@
 import Head from "next/head";
-
+import { InlineWidget } from "react-calendly";
 import Layout from "../components/layouts";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -164,20 +164,9 @@ export default function Contact() {
             </div>
           </div>
         </div>
-
-        <div
-          className="calendly-inline-widget"
-          data-url="https://calendly.com/nelsonmendez99/30min?hide_event_type_details=1&hide_gdpr_banner=1"
-          style={{"minWidth":"320px","height":"630px"}}
-        ></div>
-        <script
-          type="text/javascript"
-          src="https://assets.calendly.com/assets/external/widget.js"
-          async
-        ></script>
-      </div>
-      <div id="map" style={{"width" : "80%"}}>
-
+        <div className="App">
+          <InlineWidget url="https://calendly.com/nelsonmendez99/30min" />
+        </div>
       </div>
     </>
   );

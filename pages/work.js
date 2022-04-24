@@ -53,10 +53,10 @@ export default function Work() {
                     <h2>What We Offer</h2>
                     <h2
                       style={{
-                        "font-size": "60px",
-                        "line-height": "60px",
-                        "margin-bottom": "20px",
-                        "font-weight": "900",
+                        "fontSize": "60px",
+                        "lineHeight": "60px",
+                        "marginBottom": "20px",
+                        "fontWeight": "900",
                       }}
                     >
                       Our Services
@@ -92,7 +92,7 @@ export default function Work() {
                         <div className="col-sm-6 col-md-4 col-md-4">
                           <div
                             className="service-block"
-                            style={{ visibility: "visible;" }}
+                            style={{ visibility: "visible" }}
                           >
                             <div className="ico fa fa-code highlight"></div>
                             <div className="text-block">
@@ -109,7 +109,7 @@ export default function Work() {
                         <div className="col-sm-6 col-md-4 col-md-4">
                           <div
                             className="service-block"
-                            style={{ visibility: "visible;" }}
+                            style={{ visibility: "visible" }}
                           >
                             <div className="ico fa fa-pencil highlight"></div>
                             <div className="text-block">
@@ -126,7 +126,7 @@ export default function Work() {
                         <div className="col-sm-6 col-md-4 col-md-4">
                           <div
                             className="service-block"
-                            style={{ visibility: "visible;" }}
+                            style={{ visibility: "visible" }}
                           >
                             <div className="ico fa fa-bullhorn highlight"></div>
                             <div className="text-block">
@@ -143,7 +143,7 @@ export default function Work() {
                         <div className="col-sm-6 col-md-4 col-md-4">
                           <div
                             className="service-block"
-                            style={{ visibility: "visible;" }}
+                            style={{ visibility: "visible" }}
                           >
                             <div className="ico fa fa-eye highlight"></div>
                             <div className="text-block">
