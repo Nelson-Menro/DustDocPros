@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Layout from "../components/layouts";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 export default function Work() {
   const imageStyle = {
     filter: "brightness(50%)",
@@ -11,7 +13,7 @@ export default function Work() {
   return (
     <>
       <div className="container">
-        <div className="row featurette" style={{"alignItems" : "center"}}>
+        <div className="row featurette" style={{ alignItems: "center" }}>
           <div className="col-md-7">
             <h2 className="featurette-heading">
               Dust Doc Pro <span className="text-muted">in action.</span>
@@ -26,13 +28,16 @@ export default function Work() {
             </p>
           </div>
           <div className="col-md-5">
-            <img src="/DustDocProImages/cleaningStove.gif" style={{"borderRadius" : "5px", "width" : "75%"}}/>
+            <img
+              src="/DustDocProImages/cleaningStove.gif"
+              style={{ borderRadius: "5px", width: "75%" }}
+            />
           </div>
         </div>
-        {/* <hr
+        <hr
           className="featurette-divider"
           style={{ color: "black", width: "90%" }}
-        /> */}
+        />
         <link
           rel="stylesheet"
           type="text/css"
@@ -47,10 +52,10 @@ export default function Work() {
                     <h2>What We Offer</h2>
                     <h2
                       style={{
-                        "fontSize": "60px",
-                        "lineHeight": "60px",
-                        "marginBottom": "20px",
-                        "fontWeight": "900",
+                        fontSize: "60px",
+                        lineHeight: "60px",
+                        marginBottom: "20px",
+                        fontWeight: "900",
                       }}
                     >
                       Our Services
@@ -180,6 +185,178 @@ export default function Work() {
           className="featurette-divider"
           style={{ color: "black", width: "90%" }}
         />
+        <div className="pricing-header p-3 pb-md-4 mx-auto text-center">
+          <h1 className="display-4 fw-normal">Packages</h1>
+          <p className="fs-5 text-muted">
+            Quickly build an effective pricing table for your potential
+            customers with this Bootstrap example. It’s built with default
+            Bootstrap components and utilities with little customization.
+          </p>
+        </div>
+        <div className="row mb-3 text-center" style={{"width" : "100%"}}>
+          <div className="col-md-4">
+            <div className="card mb-4 rounded-3 shadow-sm">
+              <div className="card-header py-3">
+                <h4 className="my-0 fw-normal">Standard Cleaning</h4>
+              </div>
+              <div className="card-body">
+                <h1 className="card-title pricing-card-title">
+                <small className="text-muted fw-light">from</small> $100+
+                </h1>
+                <ul className="list-unstyled mt-3 mb-4">
+                  <li>10 users included</li>
+                  <li>2 GB of storage</li>
+                  <li>Email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button
+                  type="button"
+                  className="w-100 btn btn-lg btn-outline-primary"
+                >
+                  Sign up for free
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="card mb-4 rounded-3 shadow-sm">
+              <div className="card-header py-3">
+                <h4 className="my-0 fw-normal">Deep Cleaning</h4>
+              </div>
+              <div className="card-body">
+                <h1 className="card-title pricing-card-title">
+                  <small className="text-muted fw-light">from</small> $200+
+                </h1>
+                <ul className="list-unstyled mt-3 mb-4">
+                  <li>20 users included</li>
+                  <li>10 GB of storage</li>
+                  <li>Priority email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button type="button" className="w-100 btn btn-lg btn-primary">
+                  Get started
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="card mb-4 rounded-3 shadow-sm border-primary">
+              <div className="card-header py-3 text-white bg-primary border-primary">
+                <h4 className="my-0 fw-normal">Office/Event</h4>
+              </div>
+              <div className="card-body">
+                <h1 className="card-title pricing-card-title">
+                <small className="text-muted fw-light">from</small> $500+
+                </h1>
+                <ul className="list-unstyled mt-3 mb-4">
+                  <li>30 users included</li>
+                  <li>15 GB of storage</li>
+                  <li>Phone and email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button type="button" className="w-100 btn btn-lg btn-primary">
+                  Contact us
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 className="display-6 text-center mb-4">Compare plans</h2>
+        <div className="table-responsive">
+          <table className="table text-center">
+            <thead>
+              <tr>
+                <th style={{ width: "34%" }}></th>
+                <th style={{ width: "22%" }}>Standard</th>
+                <th style={{ width: "22%" }}>Deep</th>
+                <th style={{ width: "22%" }}>Office/Event</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" className="text-start">
+                  Public
+                </th>
+                <td>
+                  <FontAwesomeIcon icon={faCheck} />
+                </td>
+                <td>
+                  <FontAwesomeIcon icon={faCheck} />
+                </td>
+                <td>
+                  <FontAwesomeIcon icon={faCheck} />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" className="text-start">
+                  Private
+                </th>
+                <td></td>
+                <td>
+                  <FontAwesomeIcon icon={faCheck} />
+                </td>
+                <td>
+                  <FontAwesomeIcon icon={faCheck} />
+                </td>
+              </tr>
+            </tbody>
+
+            <tbody>
+              <tr>
+                <th scope="row" className="text-start">
+                  Permissions
+                </th>
+                <td>
+                  <FontAwesomeIcon icon={faCheck} />
+                </td>
+                <td>
+                  <FontAwesomeIcon icon={faCheck} />
+                </td>
+                <td>
+                  <FontAwesomeIcon icon={faCheck} />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" className="text-start">
+                  Sharing
+                </th>
+                <td></td>
+                <td>
+                  <FontAwesomeIcon icon={faCheck} />
+                </td>
+                <td>
+                  <FontAwesomeIcon icon={faCheck} />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" className="text-start">
+                  Unlimited members
+                </th>
+                <td></td>
+                <td>
+                  <FontAwesomeIcon icon={faCheck} />
+                </td>
+                <td>
+                  <FontAwesomeIcon icon={faCheck} />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" className="text-start">
+                  Extra security
+                </th>
+                <td></td>
+                <td></td>
+                <td>
+                  <FontAwesomeIcon icon={faCheck} />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <hr
+          className="featurette-divider"
+          style={{ color: "black", width: "90%" }}
+        />
         <div className="mgb-40 padb-30 auto-invert line-b-4 align-center">
           <h4
             className="font-cond-l fg-accent lts-md mgb-10"
@@ -251,7 +428,7 @@ export default function Work() {
               Recording Artist - Los Angeles
             </small>
           </li>
-          <li style={{"borderRight" : "0"}}>
+          <li style={{ borderRight: "0" }}>
             <img
               src="https://bootdey.com/img/Content/avatar/avatar5.png"
               className="wpx-100 img-round mgb-20"

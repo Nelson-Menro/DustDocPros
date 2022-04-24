@@ -97,7 +97,7 @@ code {
   margin-top: 3rem;
 }
 
-.card {
+/* .card {
   margin: 1rem;
   flex-basis: 45%;
   padding: 1.5rem;
@@ -125,7 +125,7 @@ code {
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
-}
+} */
 
 .logo {
   height: 1em;
@@ -465,3 +465,27 @@ body {
   color: #2ac5ed;
   font-weight: bold;
 }
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  } 
+  .table-responsive {
+    width: 85%;
+  }
+}
+
+
+.pricing-header {
+  max-width: 700px;
+}
+
+
