@@ -7,33 +7,6 @@ import {
   faCakeCandles,
 } from "@fortawesome/free-solid-svg-icons";
 export default function Home() {
-  const container = {
-    position: "relative",
-    textAlign: "center",
-    color: "white",
-    width: "100%",
-  };
-  const bottomLeft = {
-    position: "absolute",
-    top: "50%",
-    left: "30%",
-    transform: "translate(-50%, -50%)",
-  };
-  const imageStyle = {
-    filter: "brightness(50%)",
-    width: "auto",
-    maxWidth: "100%",
-    borderRadius: "5px",
-    height: "auto ",
-  };
-  const cardContent = {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    flexDirection: "column",
-    gap: "20px",
-  };
-
   return (
     <>
       <div
@@ -66,23 +39,7 @@ export default function Home() {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <svg
-              className="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <rect
-                width="100%"
-                height="100%"
-                fill="#777"
-                style={{ "--darkreader-inline-fill": "#5a6165;" }}
-                data-darkreader-inline-fill=""
-              ></rect>
-            </svg>
+            <img src="/DustDocProImages/IMG_4583.jpeg" />
 
             <div className="container">
               <div className="carousel-caption text-start">
@@ -93,76 +50,35 @@ export default function Home() {
                 </p>
                 <p>
                   <a className="btn btn-lg btn-primary" href="#">
-                    Sign up today
+                    Schedule an appointment today!
                   </a>
                 </p>
               </div>
             </div>
           </div>
           <div className="carousel-item">
-            <svg
-              className="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <rect
-                width="100%"
-                height="100%"
-                fill="#777"
-                style={{ "--darkreader-inline-fill": "#9d9488;" }}
-                data-darkreader-inline-fill=""
-              ></rect>
-            </svg>
-
+            <img src="/DustDocProImages/IMG_6951.jpeg" />
             <div className="container">
-              <div className="carousel-caption">
-                <h1>Another example headline.</h1>
+              <div className="carousel-caption text-start">
+                <h1>Second Example headline.</h1>
                 <p>
-                  Some representative placeholder content for the second slide
-                  of the carousel.
-                </p>
-                <p>
-                  <a className="btn btn-lg btn-primary" href="#">
-                    Learn more
-                  </a>
+                  Some representative placeholder content for the first slide of
+                  the carousel.
                 </p>
               </div>
             </div>
           </div>
-          <div className="carousel-item">
-            <svg
-              className="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <rect
-                width="100%"
-                height="100%"
-                fill="#777"
-                style={{ "--darkreader-inline-fill": "#9d9488;" }}
-                data-darkreader-inline-fill=""
-              ></rect>
-            </svg>
-
+          <div className="carousel-item ">
+            <img
+              src="/DustDocProImages/bed.jpeg"
+              style={{ height: "100%", width: "100%" }}
+            />
             <div className="container">
-              <div className="carousel-caption text-end">
-                <h1>One more for good measure.</h1>
+              <div className="carousel-caption text-start">
+                <h1>Third Example headline.</h1>
                 <p>
-                  Some representative placeholder content for the third slide of
-                  this carousel.
-                </p>
-                <p>
-                  <a className="btn btn-lg btn-primary" href="#">
-                    Browse gallery
-                  </a>
+                  Some representative placeholder content for the first slide of
+                  the carousel.
                 </p>
               </div>
             </div>
@@ -198,7 +114,7 @@ export default function Home() {
         <div className="row">
           <div className="col-lg-4">
             <svg
-              className="bd-placeholder-img rounded-circle"
+              className="bd-placeholder-img"
               width="140"
               height="140"
               xmlns="http://www.w3.org/2000/svg"
@@ -207,66 +123,7 @@ export default function Home() {
               preserveAspectRatio="xMidYMid slice"
               focusable="false"
             >
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="#777"
-                style={{ "--darkreader-inline-": "#5a6165;" }}
-                data-darkreader-inline-fill=""
-              ></rect>
-              <text
-                x="50%"
-                y="50%"
-                fill="#777"
-                dy=".3em"
-                style={{ "--darkreader-inline-fill": "#9d9488;" }}
-                data-darkreader-inline-fill=""
-              >
-                140x140
-              </text>
-            </svg>
-
-            <h2>Office</h2>
-            <p>
-              Some representative placeholder content for the three columns of
-              text below the carousel. This is the first column.
-            </p>
-            <p>
-              <a className="btn btn-secondary" href="#">
-                View details »
-              </a>
-            </p>
-          </div>
-          <div className="col-lg-4">
-            <svg
-              className="bd-placeholder-img rounded-circle"
-              width="140"
-              height="140"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: 140x140"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="#777"
-                style={{ "--darkreader-inline-fill": "#5a6165;" }}
-                data-darkreader-inline-fill=""
-              ></rect>
-              <text
-                x="50%"
-                y="50%"
-                fill="#777"
-                dy=".3em"
-                style={{ "--darkreader-inline-fill": "#9d9488;" }}
-                data-darkreader-inline-fill=""
-              >
-                140x140
-              </text>
+              <FontAwesomeIcon icon={faHouse} />
             </svg>
 
             <h2>Home</h2>
@@ -282,7 +139,7 @@ export default function Home() {
           </div>
           <div className="col-lg-4">
             <svg
-              className="bd-placeholder-img rounded-circle"
+              className="bd-placeholder-img "
               width="140"
               height="140"
               xmlns="http://www.w3.org/2000/svg"
@@ -291,24 +148,32 @@ export default function Home() {
               preserveAspectRatio="xMidYMid slice"
               focusable="false"
             >
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="#777"
-                style={{ "--darkreader-inline-fill": "#5a6165;" }}
-                data-darkreader-inline-fill=""
-              ></rect>
-              <text
-                x="50%"
-                y="50%"
-                fill="#777"
-                dy=".3em"
-                style={{ "--darkreader-inline-fill": "#9d9488;" }}
-                data-darkreader-inline-fill=""
-              >
-                140x140
-              </text>
+              <FontAwesomeIcon icon={faBuilding} />
+            </svg>
+
+            <h2>Office</h2>
+            <p>
+              Some representative placeholder content for the three columns of
+              text below the carousel. This is the first column.
+            </p>
+            <p>
+              <a className="btn btn-secondary" href="#">
+                View details »
+              </a>
+            </p>
+          </div>
+          <div className="col-lg-4">
+            <svg
+              className="bd-placeholder-img"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: 140x140"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <FontAwesomeIcon icon={faCakeCandles} />
             </svg>
 
             <h2>Events</h2>
@@ -332,7 +197,7 @@ export default function Home() {
         <div className="row featurette">
           <div className="col-md-7">
             <h2 className="featurette-heading">
-              First featurette heading.{" "}
+              Deep Cleaning.{" "}
               <span className="text-muted">It’ll blow your mind.</span>
             </h2>
             <p className="lead">
@@ -341,35 +206,10 @@ export default function Home() {
             </p>
           </div>
           <div className="col-md-5">
-            <svg
-              className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              width="500"
-              height="500"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: 500x500"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="#eee"
-                style={{ "--darkreader-inline-fill": "#222426;" }}
-                data-darkreader-inline-fill=""
-              ></rect>
-              <text
-                x="50%"
-                y="50%"
-                fill="#aaa"
-                dy=".3em"
-                style={{ "--darkreader-inline-fill": "#b2aca2;" }}
-                data-darkreader-inline-fill=""
-              >
-                500x500
-              </text>
-            </svg>
+            <img
+              src="/DustDocProImages/IMG_8546.jpg"
+              style={{ width: "100%", borderRadius: "5px" }}
+            />
           </div>
         </div>
 
@@ -391,35 +231,10 @@ export default function Home() {
             </p>
           </div>
           <div className="col-md-5 order-md-1">
-            <svg
-              className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              width="500"
-              height="500"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: 500x500"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="#eee"
-                style={{ "--darkreader-inline-fill": "#222426;" }}
-                data-darkreader-inline-fill=""
-              ></rect>
-              <text
-                x="50%"
-                y="50%"
-                fill="#aaa"
-                dy=".3em"
-                style={{ "--darkreader-inline-fill": "#b2aca2;" }}
-                data-darkreader-inline-fill=""
-              >
-                500x500
-              </text>
-            </svg>
+            <img
+              src="/DustDocProImages/IMG_0152.jpeg"
+              style={{ width: "100%", borderRadius: "5px" }}
+            />
           </div>
         </div>
 
@@ -442,35 +257,10 @@ export default function Home() {
             </p>
           </div>
           <div className="col-md-5">
-            <svg
-              className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              width="500"
-              height="500"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: 500x500"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="#eee"
-                style={{ "--darkreader-inline-fill": "#222426;" }}
-                data-darkreader-inline-fill=""
-              ></rect>
-              <text
-                x="50%"
-                y="50%"
-                fill="#aaa"
-                dy=".3em"
-                style={{ "--darkreader-inline-fill": "#b2aca2;" }}
-                data-darkreader-inline-fill=""
-              >
-                500x500
-              </text>
-            </svg>
+            <img
+              src="/DustDocProImages/IMG_8546.jpg"
+              style={{ width: "100%", borderRadius: "5px" }}
+            />
           </div>
         </div>
       </div>

@@ -80,8 +80,8 @@ export default function About() {
                     </ul>
                   </div>
                   <div className="team-content">
-                    <h3 className="title">Stephen Cronin</h3>
-                    <span className="post">CEO & Co-Founder</span>
+                    <h3 className="title">Steven Medrano</h3>
+                    <span className="post">CEO & Founder</span>
                   </div>
                 </div>
               </div>

@@ -26,13 +26,7 @@ export default function Work() {
             </p>
           </div>
           <div className="col-md-5">
-            <video
-              autoPlay
-              loop
-              style={{ borderRadius: "5px", width: "100%", height: "50%" }}
-            >
-              <source src="/DustDocProImages/IMG_4778.MOV" type="video/mp4" />
-            </video>
+            <img src="/DustDocProImages/cleaningStove.gif" style={{"borderRadius" : "5px"}}/>
           </div>
         </div>
         {/* <hr
