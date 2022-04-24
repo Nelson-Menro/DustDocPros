@@ -15,12 +15,12 @@ export default function Contact() {
       <div
         className="container"
         style={{
-          display: "flex",
+          flexDirection: "row",
           justifyContent: "space-evenly",
           flexWrap: "wrap",
         }}
       >
-        <div className="col">
+        <div className="col-md-7">
           <h4>Feel free to contact us for any kind of business query</h4>
           <p style={{ width: "75%", color: "grey" }}>
             Thank you for your interest in having Dust Doc Pro as your
@@ -164,7 +164,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div className="App">
+        <div className="col-md-5">
           <InlineWidget url="https://calendly.com/nelsonmendez99/30min" />
         </div>
       </div>

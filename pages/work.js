@@ -11,7 +11,7 @@ export default function Work() {
   return (
     <>
       <div className="container">
-        <div className="row featurette">
+        <div className="row featurette" style={{"alignItems" : "center"}}>
           <div className="col-md-7">
             <h2 className="featurette-heading">
               Dust Doc Pro <span className="text-muted">in action.</span>
@@ -26,7 +26,7 @@ export default function Work() {
             </p>
           </div>
           <div className="col-md-5">
-            <img src="/DustDocProImages/cleaningStove.gif" style={{"borderRadius" : "5px"}}/>
+            <img src="/DustDocProImages/cleaningStove.gif" style={{"borderRadius" : "5px", "width" : "75%"}}/>
           </div>
         </div>
         {/* <hr
@@ -251,7 +251,7 @@ export default function Work() {
               Recording Artist - Los Angeles
             </small>
           </li>
-          <li>
+          <li style={{"borderRight" : "0"}}>
             <img
               src="https://bootdey.com/img/Content/avatar/avatar5.png"
               className="wpx-100 img-round mgb-20"
