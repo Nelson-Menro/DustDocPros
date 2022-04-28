@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Layout from "../components/layouts";
+import Fade from "react-reveal/Fade";
 
 export default function About() {
   const imageStyle = {
@@ -37,179 +38,183 @@ export default function About() {
         />
         <section id="team" className="team_member section-padding">
           <div className="container">
-            <div className="section-title text-center">
-              <h1>Meet our team</h1>
-              <p>
-                Our team of experts that will help you with any cleaning services needed!
-              </p>
-            </div>
-            <div className="row text-center">
-              <div
-                className="col-md-3 col-sm-6 col-xs-12 wow fadeInUp"
-                data-wow-duration="1s"
-                data-wow-delay="0.1s"
-                data-wow-offset="0"
-              >
-                <div className="our-team">
-                  <div className="team_img">
-                    <img
-                      src="https://bootdey.com/img/Content/avatar/avatar7.png"
-                      alt="team-image"
-                    />
-                    <ul className="social">
-                      <li>
-                        <a href="#">
-                          <i className="fa fa-facebook"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fa fa-twitter"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fa fa-linkedin"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fa fa-instagram"></i>
-                        </a>
-                      </li>
-                    </ul>
+            <Fade bottom>
+              <div className="section-title text-center">
+                <h1>Meet our team</h1>
+                <p>
+                  Our team of experts that will help you with any cleaning
+                  services needed!
+                </p>
+              </div>
+            </Fade>
+            <Fade bottom>
+              <div className="row text-center">
+                <div
+                  className="col-md-3 col-sm-6 col-xs-12 wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.1s"
+                  data-wow-offset="0"
+                >
+                  <div className="our-team">
+                    <div className="team_img">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                        alt="team-image"
+                      />
+                      <ul className="social">
+                        <li>
+                          <a href="#">
+                            <i className="fa fa-facebook"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i className="fa fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i className="fa fa-linkedin"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i className="fa fa-instagram"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="team-content">
+                      <h3 className="title">Steven Medrano</h3>
+                      <span className="post">CEO & Founder</span>
+                    </div>
                   </div>
-                  <div className="team-content">
-                    <h3 className="title">Steven Medrano</h3>
-                    <span className="post">CEO & Founder</span>
+                </div>
+                <div
+                  className="col-md-3 col-sm-6 col-xs-12 wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.2s"
+                  data-wow-offset="0"
+                >
+                  <div className="our-team">
+                    <div className="team_img">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar6.png"
+                        alt="team-image"
+                      />
+                      <ul className="social">
+                        <li>
+                          <a href="#">
+                            <i className="fa fa-facebook"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i className="fa fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i className="fa fa-linkedin"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i className="fa fa-instagram"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="team-content">
+                      <h3 className="title">Rachel Park</h3>
+                      <span className="post">Associate</span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col-md-3 col-sm-6 col-xs-12 wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.3s"
+                  data-wow-offset="0"
+                >
+                  <div className="our-team">
+                    <div className="team_img">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar2.png"
+                        alt="team-image"
+                      />
+                      <ul className="social">
+                        <li>
+                          <a href="#">
+                            <i className="fa fa-facebook"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i className="fa fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i className="fa fa-linkedin"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i className="fa fa-instagram"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="team-content">
+                      <h3 className="title">Dan Billson</h3>
+                      <span className="post">Associate</span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col-md-3 col-sm-6 col-xs-12 wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.4s"
+                  data-wow-offset="0"
+                >
+                  <div className="our-team">
+                    <div className="team_img">
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar3.png"
+                        alt="team-image"
+                      />
+                      <ul className="social">
+                        <li>
+                          <a href="#">
+                            <i className="fa fa-facebook"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i className="fa fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i className="fa fa-linkedin"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i className="fa fa-instagram"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="team-content">
+                      <h3 className="title">Gina Mellow</h3>
+                      <span className="post">Co-founder</span>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div
-                className="col-md-3 col-sm-6 col-xs-12 wow fadeInUp"
-                data-wow-duration="1s"
-                data-wow-delay="0.2s"
-                data-wow-offset="0"
-              >
-                <div className="our-team">
-                  <div className="team_img">
-                    <img
-                      src="https://bootdey.com/img/Content/avatar/avatar6.png"
-                      alt="team-image"
-                    />
-                    <ul className="social">
-                      <li>
-                        <a href="#">
-                          <i className="fa fa-facebook"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fa fa-twitter"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fa fa-linkedin"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fa fa-instagram"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="team-content">
-                    <h3 className="title">Rachel Park</h3>
-                    <span className="post">Associate</span>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col-md-3 col-sm-6 col-xs-12 wow fadeInUp"
-                data-wow-duration="1s"
-                data-wow-delay="0.3s"
-                data-wow-offset="0"
-              >
-                <div className="our-team">
-                  <div className="team_img">
-                    <img
-                      src="https://bootdey.com/img/Content/avatar/avatar2.png"
-                      alt="team-image"
-                    />
-                    <ul className="social">
-                      <li>
-                        <a href="#">
-                          <i className="fa fa-facebook"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fa fa-twitter"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fa fa-linkedin"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fa fa-instagram"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="team-content">
-                    <h3 className="title">Dan Billson</h3>
-                    <span className="post">Associate</span>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col-md-3 col-sm-6 col-xs-12 wow fadeInUp"
-                data-wow-duration="1s"
-                data-wow-delay="0.4s"
-                data-wow-offset="0"
-              >
-                <div className="our-team">
-                  <div className="team_img">
-                    <img
-                      src="https://bootdey.com/img/Content/avatar/avatar3.png"
-                      alt="team-image"
-                    />
-                    <ul className="social">
-                      <li>
-                        <a href="#">
-                          <i className="fa fa-facebook"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fa fa-twitter"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fa fa-linkedin"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fa fa-instagram"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="team-content">
-                    <h3 className="title">Gina Mellow</h3>
-                    <span className="post">Co-founder</span>
-                  </div>
-                </div>
-              </div>
-             
-            </div>
+            </Fade>
           </div>
         </section>
       </div>
