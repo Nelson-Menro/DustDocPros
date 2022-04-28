@@ -38,15 +38,13 @@ export default function NavBar() {
             </li>
             <li className="nav-item">
               <Link href="/contact">
-                <a className="nav-link">
-                  Contact Us
-                </a>
+                <a className="nav-link">Contact Us</a>
               </Link>
             </li>
           </ul>
           <div className="d-flex">
             <button className="btn btn-outline-success" type="submit">
-              Call Now!
+              <a href="tel:2405758132">Call Now!</a>
             </button>
           </div>
         </div>

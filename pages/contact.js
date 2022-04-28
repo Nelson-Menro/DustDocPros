@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { InlineWidget } from "react-calendly";
 import Layout from "../components/layouts";
+import MyMarker from "../components/mapMarker";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPhone,
@@ -8,8 +9,23 @@ import {
   faEnvelope,
   faClock,
 } from "@fortawesome/free-solid-svg-icons";
-
+import GoogleMapReact from "google-map-react";
+import Fade from "react-reveal/Fade";
 export default function Contact() {
+  const distanceToMouse = (pt, mp) => {
+    if (pt && mp) {
+      // return distance between the marker and mouse pointer
+      return Math.sqrt(
+        (pt.x - mp.x) * (pt.x - mp.x) + (pt.y - mp.y) * (pt.y - mp.y)
+      );
+    }
+  };
+  //points for google maps, london
+  const points = [
+    { id: 1, title: "DC", lat: 38.89511, lng: -77.03637 },
+    { id: 2, title: "Hagerstown", lat: 39.64176, lng: -77.71999 },
+    { id: 3, title: "Leesburg", lat: 39.1155, lng: -77.5645 },
+  ];
   return (
     <>
       <div
@@ -164,9 +180,41 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div className="col-md-5">
-          <InlineWidget url="https://calendly.com/nelsonmendez99/30min" />
+        <div style={{ width: "400px", height: "400px" }}>
+          <GoogleMapReact 
+            bootstrapURLKeys={{
+              key: "AIzaSyAqus7ufng9E4u4tZtsH0QnR-Mx5zDh1Go",
+              language: "en",
+              region: "US",
+            }}
+            defaultCenter={{ lat: 39.412327, lng: -77.425461 }}
+            defaultZoom={8}
+            distanceToMouse={distanceToMouse}
+          >
+            {points.map(({ lat, lng, id, title }) => {
+              return (
+                <MyMarker
+                  key={id}
+                  lat={lat}
+                  lng={lng}
+                  text={id}
+                  tooltip={title}
+                />
+              );
+            })}
+          </GoogleMapReact>
         </div>
+      </div>
+      <Fade bottom>
+        <div className="section-title text-center">
+          <h1>Or Schedule an appointment!</h1>
+          <p>
+            Our team of experts will help you decide what best suits your needs and any further details!
+          </p>
+        </div>
+      </Fade>
+      <div style={{ width: "80%" }} id="appointment">
+        <InlineWidget url="https://calendly.com/nelsonmendez99/30min" />
       </div>
     </>
   );

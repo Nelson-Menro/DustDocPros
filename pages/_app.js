@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "../public/app.css";
+import "../public/marker.css";
 import { useEffect } from "react";
 
 function MyApp({ Component, pageProps }) {

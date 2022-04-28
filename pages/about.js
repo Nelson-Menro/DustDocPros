@@ -37,7 +37,7 @@ export default function About() {
           style={{ color: "black", width: "90%" }}
         />
         <section id="team" className="team_member section-padding">
-          <div className="container">
+          {/* <div className="container">
             <Fade bottom>
               <div className="section-title text-center">
                 <h1>Meet our team</h1>
@@ -215,7 +215,72 @@ export default function About() {
                 </div>
               </div>
             </Fade>
-          </div>
+          </div> */}
+          <Fade bottom>
+            <div className="section-title text-center">
+              <h1>Meet our team</h1>
+              <p>
+                Our team of experts that will help you with any cleaning
+                services needed!
+              </p>
+            </div>
+          </Fade>
+          <Fade bottom>
+            <div className="row">
+              <div className=" col-lg-6">
+                <div className="card">
+                  <div className="row g-0">
+                    <div className="col-sm-5" style={{ background: "#868e96" }}>
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                        className="card-img-top h-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div className="col-sm-7">
+                      <div className="card-body">
+                        <h5 className="card-title">Steven Medrano</h5>
+                        <p className="card-text">
+                          Steven Medrano is the CEO and founder of Dust Doc Pro based
+                          in Maryland. He is a hard working Professional that specializes
+                          in Deep cleaning, COVID 19 dis-infection and many cleaning protocols.
+                          He cares deeply about the health and safety of his staff and others.
+                        </p>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className=" col-lg-6">
+                <div className="card">
+                  <div className="row g-0">
+                    <div className="col-sm-5" style={{ background: "#868e96" }}>
+                      <img
+                        src="https://bootdey.com/img/Content/avatar/avatar3.png"
+                        className="card-img-top h-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div className="col-sm-7">
+                      <div className="card-body">
+                        <h5 className="card-title">Andrea Padilla</h5>
+                        <p className="card-text">
+                          Andrea Padilla is the Co-founder of Dust Doc Pro based
+                          in Maryland. He is a hard working Professional that specializes
+                          in Deep cleaning, COVID 19 dis-infection and many cleaning protocols.
+                          He cares deeply about the health and safety of his staff and others.
+                        </p>
+                        {/* <a href="#" className="btn btn-primary stretched-link">
+                          View Profile
+                        </a> */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Fade>
         </section>
       </div>
     </>

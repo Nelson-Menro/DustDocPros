@@ -3,22 +3,18 @@ import Layout from "../components/layouts";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import Fade from "react-reveal/Fade";
+import Pulse from "react-reveal/Pulse";
 export default function Work() {
-  const imageStyle = {
-    filter: "brightness(50%)",
-    width: "auto",
-    maxWidth: "100%",
-    borderRadius: "5px",
-    height: "auto ",
-  };
   return (
     <>
       <div className="container">
         <div className="row featurette" style={{ alignItems: "center" }}>
           <div className="col-md-7">
-            <h2 className="featurette-heading">
-              Dust Doc Pro <span className="text-muted">in action.</span>
-            </h2>
+            <Pulse>
+              <h2 className="featurette-heading">
+                Dust Doc Pro <span className="text-muted">in action.</span>
+              </h2>
+            </Pulse>
             <p className="lead">
               Dust Doc Pro<sup>®</sup> is so much more than just a home cleaning
               service. We are a company dedicated to giving our customers back
@@ -54,7 +50,7 @@ export default function Work() {
                   style={{ justifyContent: "flex-start" }}
                 >
                   <div className="row text-center">
-                    <div className="col-sm-12 col-md-12 col-md-12">
+                    <div className="col-sm-12 col-md-12 col-md-12" id="servicesDiv">
                       <h2>What We Offer</h2>
                       <h2
                         style={{

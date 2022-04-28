@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Layout from "../components/layouts";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -44,15 +45,15 @@ export default function Home() {
 
             <div className="container">
               <div className="carousel-caption text-start">
-                <h1>Example headline.</h1>
+                <h1>Room Cleaning</h1>
                 <p>
-                  Some representative placeholder content for the first slide of
-                  the carousel.
+                  Even the tough to get places we will clean! Please to get
+                  started, schedule an appointment or contact us
                 </p>
                 <p>
-                  <a className="btn btn-lg btn-primary" href="#">
-                    Schedule an appointment today!
-                  </a>
+                  <Link href="/contact#appointment">
+                    <a className="btn btn-lg btn-primary">Schedule an appointment!</a>
+                  </Link>
                 </p>
               </div>
             </div>
@@ -61,10 +62,10 @@ export default function Home() {
             <img src="/DustDocProImages/IMG_6951.jpeg" />
             <div className="container">
               <div className="carousel-caption text-start">
-                <h1>Second Example headline.</h1>
+                <h1>Deep Cleaning</h1>
                 <p>
-                  Some representative placeholder content for the first slide of
-                  the carousel.
+                  Leave your home or space looking as clean as ever with Dust
+                  Doc Pro
                 </p>
               </div>
             </div>
@@ -76,10 +77,10 @@ export default function Home() {
             />
             <div className="container">
               <div className="carousel-caption text-start">
-                <h1>Third Example headline.</h1>
+                <h1>Air bnb cleaning crew</h1>
                 <p>
-                  Some representative placeholder content for the first slide of
-                  the carousel.
+                  After rentings, cleaning may be a pain. Leave it up to Dust
+                  Doc Pro!
                 </p>
               </div>
             </div>
@@ -133,9 +134,9 @@ export default function Home() {
               text below the carousel. This is the first column.
             </p>
             <p>
-              <a className="btn btn-secondary" href="#">
-                View details »
-              </a>
+              <Link href="/work#servicesDiv">
+                <a className="btn btn-secondary">View details</a>
+              </Link>
             </p>
           </div>
           <div className="col-lg-4">
@@ -158,9 +159,9 @@ export default function Home() {
               text below the carousel. This is the first column.
             </p>
             <p>
-              <a className="btn btn-secondary" href="#">
-                View details »
-              </a>
+              <Link href="/work#servicesDiv">
+                <a className="btn btn-secondary">View details</a>
+              </Link>
             </p>
           </div>
           <div className="col-lg-4">
@@ -183,11 +184,36 @@ export default function Home() {
               text below the carousel. This is the first column.
             </p>
             <p>
+              <Link href="/work#servicesDiv">
+                <a className="btn btn-secondary">View details</a>
+              </Link>
+            </p>
+          </div>
+          {/* <div className="col-lg-4">
+            <svg
+              className="bd-placeholder-img"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: 140x140"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <FontAwesomeIcon icon={faHouse} />
+            </svg>
+
+            <h2>Home</h2>
+            <p>
+              Some representative placeholder content for the three columns of
+              text below the carousel. This is the first column.
+            </p>
+            <p>
               <a className="btn btn-secondary" href="#">
                 View details »
               </a>
             </p>
-          </div>
+          </div> */}
         </div>
 
         <hr
